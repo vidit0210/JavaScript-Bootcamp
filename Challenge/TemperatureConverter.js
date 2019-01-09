@@ -1,4 +1,4 @@
-let tempInFahrenheit = 68;
+let tempInFahrenheit = 200;
 //Celcis and  Kelvin
 let tempInCelcius = (tempInFahrenheit - 32) * (5 / 9);
 let tempInKelvin = (tempInFahrenheit + 459.67) * (5 / 9);
