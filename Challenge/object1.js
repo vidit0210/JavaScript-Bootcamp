@@ -3,5 +3,6 @@ let person = {
     age: 22,
     lives: 'Mumbai'
 }
-person.age = 23
-console.log(`Information about an Individual is as followed Name is: ${person.names}`);
+person.age += 1
+console.log(person.age);
+console.log(`Information about an Individual is as followed Name is: ${person.name}`);
