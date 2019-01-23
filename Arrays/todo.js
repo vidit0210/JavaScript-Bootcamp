@@ -17,3 +17,23 @@ for (let item = 0; item < ToDo.length; item++) {
 }
 
 //Get The Number Index of the Item
+const object_todo = [{
+    text: 'Bitcoin Book',
+    commpleted: false
+}, {
+    text: 'Ethereum Book',
+    commpleted: false
+}, {
+    text: 'DeepLearning Book',
+    commpleted: true
+}]
+
+let delteToDo = (object, stuff) => {
+    let index = object.findIndex((todo) => {
+        return todo.text.toLowerCase() === stuff.toLowerCase()
+    })
+    return index
+}
+let index = delteToDo(object_todo, 'bitcoin book')
+object_todo.splice(index, 1) //1 delete that item
+console.log(object_todo)

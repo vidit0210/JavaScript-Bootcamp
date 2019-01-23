@@ -52,3 +52,28 @@ console.log(notes.indexOf('Note 4'))
 console.log('--------------------------------------------------');
 //Working on Object
 console.log(notes.indexOf({}))
+//To work with Obejcts use findindex
+const index = objectsNotes.findIndex((note, index) => {
+    console.log(note)
+    return note.title === 'Habbits to Work on'
+
+})
+console.log(index)
+console.log('--------------------------------------------------');
+
+const findNote = (notes, noteTitle) => {
+    const index = notes.findIndex((note) => {
+        return note.title.toLowerCase() === noteTitle.toLowerCase()
+    })
+    return notes[index]
+}
+const findNoteV2 = (notes, noteTitle) => { //find - returns the value instead of index
+    const note = notes.find((note) => {
+        return note.title.toLowerCase() === noteTitle.toLowerCase()
+    })
+    return note;
+}
+const find_note = findNote(objectsNotes, 'Habbits to Work on')
+console.log(find_note)
+const find_notev2 = findNoteV2(objectsNotes, 'Habbits to Work on')
+console.log(find_notev2)
