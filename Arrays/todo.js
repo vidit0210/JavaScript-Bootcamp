@@ -32,8 +32,7 @@ let delteToDo = (object, stuff) => {
     let index = object.findIndex((todo) => {
         return todo.text.toLowerCase() === stuff.toLowerCase()
     })
-    return index
+    return object.splice(index, 1)
 }
 let index = delteToDo(object_todo, 'bitcoin book')
-object_todo.splice(index, 1) //1 delete that item
 console.log(object_todo)

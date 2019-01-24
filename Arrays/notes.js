@@ -49,6 +49,7 @@ for (let count = notes.length; count >= 0; count--) {
 }
 console.log('--------------------------------------------------');
 console.log(notes.indexOf('Note 4'))
+
 console.log('--------------------------------------------------');
 //Working on Object
 console.log(notes.indexOf({}))
@@ -77,3 +78,4 @@ const find_note = findNote(objectsNotes, 'Habbits to Work on')
 console.log(find_note)
 const find_notev2 = findNoteV2(objectsNotes, 'Habbits to Work on')
 console.log(find_notev2)
+console.log('--------------------------------------------------');
