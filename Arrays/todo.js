@@ -36,3 +36,13 @@ let delteToDo = (object, stuff) => {
 }
 let index = delteToDo(object_todo, 'bitcoin book')
 console.log(object_todo)
+
+console.log('--------------------------------------------------');
+
+const getThingsToDo = (todos) => {
+    return todos.filter((item) => {
+        //return item.commpleted === false
+        return !item.commpleted
+    })
+}
+console.log(getThingsToDo(object_todo))

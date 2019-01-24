@@ -79,3 +79,22 @@ console.log(find_note)
 const find_notev2 = findNoteV2(objectsNotes, 'Habbits to Work on')
 console.log(find_notev2)
 console.log('--------------------------------------------------');
+
+//Filtering
+//Creates a new Filtered Array on the the condition providecs
+const filterNote = (toFilter, query) => {
+    let result = toFilter.filter((item, index) => {
+        let isTitleMatch = item.title.toLowerCase().includes(query)
+        let isBodyMatch = item.body.toLowerCase().includes(query)
+        return isTitleMatch || isBodyMatch
+    })
+    return result
+}
+const filetArrayNotes = (_Array, query) => {
+    let result = _Array.filter((item, index) => {
+        return item.includes('3')
+    })
+    return result
+}
+console.log(filterNote(objectsNotes, 'office'))
+console.log(filetArrayNotes(notes, '3'))
