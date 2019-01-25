@@ -98,3 +98,18 @@ const filetArrayNotes = (_Array, query) => {
 }
 console.log(filterNote(objectsNotes, 'office'))
 console.log(filetArrayNotes(notes, '3'))
+console.log('--------------------------------------------------');
+//Sorting Arrays
+
+const sortNoted = (notes) => {
+    notes.sort((a, b) => {
+        if (a.title.toLowerCase() < b.title.toLowerCase()) {
+            return -1
+        } else if (b.title.toLowerCase() > a.title.toLowerCase()) {
+            return 1
+        } else {
+            return 0
+        }
+    })
+}
+console.log(sortNoted(objectsNotes))

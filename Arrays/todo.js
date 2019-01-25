@@ -46,3 +46,15 @@ const getThingsToDo = (todos) => {
     })
 }
 console.log(getThingsToDo(object_todo))
+const sortTodo = (todos) => {
+    todos.sort((a, b) => {
+        if (!a.commpleted && b.commpleted) {
+            return -1
+        } else if (!b.commpleted && a.commpleted) {
+            return 1
+        } else {
+            return 0
+        }
+    })
+}
+console.log(sortTodo(object_todo))
