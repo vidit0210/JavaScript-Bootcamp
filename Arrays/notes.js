@@ -1,4 +1,4 @@
-notes =['note1','note2','note3','note4']
+{/*
 // console.log(notes[1])
 // notes.push('note3');
 // console.log(notes)
@@ -11,6 +11,23 @@ notes =['note1','note2','note3','note4']
 // console.log(notes)
 // notes.splice(2,1)
 // console.log(notes)
-notes.forEach(note => {
-    console.log(note)
-});
+// notes.forEach((note,index) => {
+//     console.log(index)
+//     console.log(note)
+// });
+// x=notes.indexOf('note9')
+// console.log(x) */}
+let notes =[
+    {
+        title:'Study German',
+        body:' Learn German everyday from german with Jenny'
+    },
+    {
+        title:'Improve Programming Skills',
+        body:'Can Improcve Porgramming Skills from HackerEarth'
+    },
+    {
+        title:'Complete Front End  Developer NanoDegree',
+        body:' Learn front ENd Developer NanoDegree From Udacity'
+    }
+]
