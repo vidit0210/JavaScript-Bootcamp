@@ -23,8 +23,7 @@ const account ={
 
         return balance
     }
-
-    
+  
 
     }
 account.addIncome('Salary',100)
