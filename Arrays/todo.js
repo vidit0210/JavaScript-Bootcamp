@@ -15,6 +15,17 @@ const todos =[{
     completed:false
 }]
 
+const sortToDo  =(todos)=>{
+    todos.sort((a,b)=>{
+        if( !a.completed && b.completed  ){
+            return -1
+        }else if(!b.completed && a.completed){
+            return 1;
+        }else{
+        return 0;
+        }
+    })
+}
 const deleteToDo = (todos,text)=>{
     let index = todos.findIndex( todo => {todo.text.toLowerCase()===text.toLowerCase()})
     if(index>-1){
@@ -26,4 +37,5 @@ const deleteToDo = (todos,text)=>{
 let completed = todos.filter(todo => {
     return !(todo.completed)
 })
-console.log(completed)
+sortToDo(todos);
+console.log(todos)
