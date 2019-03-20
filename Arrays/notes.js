@@ -17,6 +17,7 @@
 // });
 // x=notes.indexOf('note9')
 // console.log(x) */}
+let x =[1,2,3,4,5,6]
 let notes =[
     {
         title:'Study German',
@@ -28,6 +29,24 @@ let notes =[
     },
     {
         title:'Complete Front End  Developer NanoDegree',
-        body:' Learn front ENd Developer NanoDegree From Udacity'
+        body:' Learn front ENd Developer NanoDegree From'
     }
 ]
+// let index = notes.findIndex(note => {return note.title ==="Study German"})
+// console.log(index)
+
+// let findNote  = function(notes,noteTitle){
+//     const index  = notes.findIndex(note =>{return note.title.toLowerCase() === noteTitle.toLowerCase()})
+//     return notes[index]
+// }
+
+let findNote  = function(notes,noteTitle){
+    const note  = notes.find(note =>{return note.title.toLowerCase() === noteTitle.toLowerCase()})
+    return note
+}
+let serachNote = (notes,noteTitle)=>{
+    return notes.filter(note => {note.title.toLowerCase()=== noteTitle.toLowerCase()})
+}
+let result = findNote(notes,'Study German')
+console.log(result)
+
