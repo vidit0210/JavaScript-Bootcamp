@@ -24,6 +24,6 @@ const deleteToDo = (todos,text)=>{
 }
 // deleteToDo(todos,'CSSs')
 let completed = todos.filter(todo => {
-    return todo.completed
+    return !(todo.completed)
 })
 console.log(completed)
